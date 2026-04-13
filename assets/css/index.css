@@ -1,0 +1,221 @@
+/* Index Page Specific Styles */
+
+.hero-container {
+    min-height: 100vh;
+    background: var(--color-background);
+    position: relative;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Profile Photo */
+.profile-container {
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-surface);
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
+}
+
+.profile-ring {
+    position: absolute;
+    inset: -4px;
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.profile-image:hover .profile-photo {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-xl);
+}
+
+.profile-image:hover .profile-ring {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.hero-title {
+    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-primary);
+}
+
+.title-accent {
+    color: var(--color-primary);
+    display: block;
+    margin-top: var(--spacing-xs);
+}
+
+.hero-description {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-xl);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Stats Section */
+.stats-section {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xl);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-sm);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.stat-item {
+    text-align: center;
+    flex: 1;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 40px;
+    background: var(--color-border);
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    padding: var(--spacing-2xl) 0;
+}
+
+.about-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.expertise-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    justify-content: center;
+}
+
+.tag {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-secondary);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-xl);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.tag:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Index Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-actions .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .stats-container {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+        padding: var(--spacing-lg);
+    }
+    
+    .stat-divider {
+        width: 40px;
+        height: 1px;
+    }
+    
+    .expertise-tags {
+        gap: var(--spacing-xs);
+    }
+    
+    .tag {
+        font-size: 0.8rem;
+        padding: 6px var(--spacing-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+}
