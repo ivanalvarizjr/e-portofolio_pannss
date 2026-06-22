@@ -1,6 +1,6 @@
 /* Footer Styles */
 .main-footer {
-    background: linear-gradient(135deg, var(--color-accent) 0%, #1e293b 100%);
+    background: #E36A6A 100%;
     color: #e2e8f0;
     margin-top: var(--spacing-2xl);
     position: relative;
@@ -14,7 +14,7 @@
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.967), transparent);
 }
 
 .footer-container {
@@ -35,7 +35,7 @@
 .footer-brand-name {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #ffffff;
+    color: #FFF2D0;
     margin-bottom: var(--spacing-xs);
 }
 
@@ -46,7 +46,7 @@
 }
 
 .footer-description {
-    color: #cbd5e1;
+    color: #FFF2D0;
     line-height: 1.6;
     font-size: 0.9rem;
 }
@@ -55,7 +55,7 @@
 .footer-section-title {
     font-size: 1rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #FFF2D0;
     margin-bottom: var(--spacing-md);
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -72,7 +72,7 @@
 }
 
 .footer-link {
-    color: #cbd5e1;
+    color: #FFF2D0;
     text-decoration: none;
     font-size: 0.9rem;
     transition: all 0.3s ease;
@@ -103,7 +103,7 @@
 }
 
 .contact-text {
-    color: #cbd5e1;
+    color: #FFF2D0;
     font-size: 0.9rem;
 }
 
@@ -121,14 +121,14 @@
     height: 40px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    color: #cbd5e1;
+    color: #FFF2D0;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .social-link:hover {
     background: var(--color-primary);
-    color: #ffffff;
+    color: #E36A6A;
     transform: translateY(-2px);
 }
 
@@ -152,7 +152,7 @@
 }
 
 .copyright {
-    color: #94a3b8;
+    color: #FFF2D0;
     font-size: 0.875rem;
     margin: 0;
 }
@@ -164,7 +164,7 @@
 }
 
 .footer-bottom-link {
-    color: #94a3b8;
+    color: #FFF2D0;
     text-decoration: none;
     font-size: 0.875rem;
     transition: color 0.3s ease;
@@ -175,7 +175,7 @@
 }
 
 .separator {
-    color: #64748b;
+    color: #FFF2D0;
     font-size: 0.875rem;
 }
 
