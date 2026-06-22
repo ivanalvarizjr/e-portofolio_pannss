@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: #FFF2D0;
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--color-border);
     z-index: 1000;
@@ -107,7 +107,7 @@
 
 /* Scrolled navbar effect */
 .main-navbar.scrolled {
-    background: rgba(255, 255, 255, 0.98);
+    background: #FFF2D0;
     box-shadow: var(--shadow-sm);
 }
 
@@ -126,7 +126,7 @@
         top: 100%;
         left: 0;
         right: 0;
-        background: rgba(255, 255, 255, 0.98);
+        background: #FFF2D0;
         backdrop-filter: blur(20px);
         border-bottom: 1px solid var(--color-border);
         flex-direction: column;
