@@ -1,15 +1,15 @@
 /* Common CSS Variables and Base Styles */
 :root {
-    --color-primary: #4f46e5;
-    --color-primary-light: #6366f1;
-    --color-accent: #1f2937;
-    --color-text-primary: #111827;
-    --color-text-secondary: #6b7280;
-    --color-text-muted: #9ca3af;
-    --color-background: #fafafa;
-    --color-surface: #ffffff;
-    --color-border: #e5e7eb;
-    --color-border-light: #f3f4f6;
+    --color-primary: #FFB2B2;
+    --color-primary-light: #FFB2B2;
+    --color-accent: #FFF2D0;
+    --color-text-primary: #E36A6A;
+    --color-text-secondary: #FFB2B2;
+    --color-text-muted: #FFB2B2;
+    --color-background: #FFFBF1;
+    --color-surface: #FFF2D0;
+    --color-border: #FFB2B2;
+    --color-border-light: #FFFBF1;
     --color-success: #10b981;
     --color-error: #ef4444;
     
@@ -73,7 +73,7 @@ body {
 .orb-1 {
     width: 400px;
     height: 400px;
-    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+    background: linear-gradient(135deg, #e0e7ff 0%, #FFB2B2 100%);
     top: -200px;
     right: -200px;
     animation: float-gentle 20s ease-in-out infinite;
@@ -82,7 +82,7 @@ body {
 .orb-2 {
     width: 300px;
     height: 300px;
-    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    background: linear-gradient(135deg, #fef3c7 0%, #59513000 100%);
     bottom: -150px;
     left: -150px;
     animation: float-gentle 25s ease-in-out infinite reverse;
@@ -183,7 +183,7 @@ body {
 
 .btn-primary {
     background: var(--color-primary);
-    color: white;
+    color: #FFF2D0;
     box-shadow: var(--shadow-md);
 }
 
