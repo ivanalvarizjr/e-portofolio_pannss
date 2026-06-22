@@ -342,6 +342,8 @@
     font-weight: 600;
     font-family: inherit;
     cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
     transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
     box-shadow: 0 2px 8px rgba(37, 211, 102, 0.35);
 }
