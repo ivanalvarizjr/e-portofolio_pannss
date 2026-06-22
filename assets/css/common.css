@@ -1,15 +1,15 @@
 /* Common CSS Variables and Base Styles */
 :root {
-    --color-primary: #FFB2B2;
-    --color-primary-light: #FFB2B2;
-    --color-accent: #FFF2D0;
-    --color-text-primary: #E36A6A;
-    --color-text-secondary: #FFB2B2;
-    --color-text-muted: #FFB2B2;
-    --color-background: #FFFBF1;
-    --color-surface: #FFF2D0;
-    --color-border: #FFB2B2;
-    --color-border-light: #FFFBF1;
+    --color-primary: #FF0000;
+    --color-primary-light: #F5F5F5;
+    --color-accent: #F5F5F5;
+    --color-text-primary: #FF0000;
+    --color-text-secondary: #bd0000;
+    --color-text-muted: #bd0000;
+    --color-background: #DFF1F1;
+    --color-surface: #F5F5F5;
+    --color-border: #BBD5DA;
+    --color-border-light: #BBD5DA;
     --color-success: #10b981;
     --color-error: #ef4444;
     
