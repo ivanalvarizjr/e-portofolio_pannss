@@ -4,7 +4,8 @@
     top: 0;
     left: 0;
     right: 0;
-    background: #FFF2D0;
+    background: #BBD5DA;
+    box-shadow: var(--shadow-md);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--color-border);
     z-index: 1000;
@@ -107,7 +108,7 @@
 
 /* Scrolled navbar effect */
 .main-navbar.scrolled {
-    background: #FFF2D0;
+    background: #BBD5DA;
     box-shadow: var(--shadow-sm);
 }
 
@@ -126,7 +127,7 @@
         top: 100%;
         left: 0;
         right: 0;
-        background: #FFF2D0;
+        background: #BBD5DA;
         backdrop-filter: blur(20px);
         border-bottom: 1px solid var(--color-border);
         flex-direction: column;
