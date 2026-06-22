@@ -318,5 +318,49 @@
             }
         }
     </script>
+    <!-- JavaScript -->
+    <script src="assets/js/navigation.js"></script>
+    <script>
+        // ===== WhatsApp Send Function =====
+        function buildWALink(anchor) {
+            const name    = document.getElementById('wa-name').value.trim();
+            const topic   = document.getElementById('wa-topic').value;
+            const message = document.getElementById('wa-message').value.trim();
+ 
+            if (!name) {
+                alert('Mohon masukkan nama kamu terlebih dahulu.');
+                document.getElementById('wa-name').focus();
+                return false;
+            }
+            if (!topic) {
+                alert('Mohon pilih topik pesan.');
+                document.getElementById('wa-topic').focus();
+                return false;
+            }
+            if (!message) {
+                alert('Mohon tulis pesanmu terlebih dahulu.');
+                document.getElementById('wa-message').focus();
+                return false;
+            }
+ 
+            const waNumber = '6281213039997';
+            const text = `Halo Ivan! 👋\n\n*Nama:* ${name}\n*Topik:* ${topic}\n\n*Pesan:*\n${message}`;
+            anchor.href = `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`;
+            return true;
+        }
+ 
+        function toggleFAQ(button) {
+            const faqItem = button.parentElement;
+            const isActive = faqItem.classList.contains('active');
+            
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+    </script>
 </body>
 </html>
