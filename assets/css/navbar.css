@@ -181,3 +181,26 @@
         font-size: 1.125rem;
     }
 }
+
+/* Editorial navigation */
+.main-navbar, .main-navbar.scrolled {
+    background: var(--color-background);
+    border-bottom: 2px solid var(--color-text-primary);
+    box-shadow: none;
+    backdrop-filter: none;
+}
+.navbar-container { max-width: 1180px; min-height: 64px; padding: .65rem 1.5rem; }
+.brand-text { color: var(--color-text-primary); font-size: 1.15rem; letter-spacing: -.04em; }
+.navbar-menu { gap: .25rem; }
+.nav-link { padding: .65rem .8rem; color: var(--color-text-secondary); border-radius: 0; font-weight: 650; }
+.nav-link:hover, .nav-link.active { color: var(--color-primary); background: transparent; }
+.nav-link.active::after { bottom: 0; left: .8rem; width: calc(100% - 1.6rem); height: 3px; background: var(--color-primary); transform: none; }
+.mobile-menu-toggle { border: 2px solid var(--color-text-primary); border-radius: 0; }
+.hamburger-line { background: var(--color-text-primary); border-radius: 0; }
+@media (max-width: 768px) {
+    .navbar-container { padding: .65rem 1rem; }
+    .navbar-menu { background: var(--color-background); border-bottom: 2px solid var(--color-text-primary); box-shadow: 0 4px 0 var(--color-text-primary); }
+    .nav-item { padding: 0 1rem; }
+    .nav-link { border-bottom: 1px solid var(--color-border-light); }
+    .nav-link.active::after { display: none; }
+}
