@@ -250,3 +250,17 @@
         gap: var(--spacing-sm);
     }
 }
+
+/* Editorial footer */
+.main-footer { background: var(--color-text-primary); color: var(--color-background); border-top: 4px solid var(--color-primary); }
+.main-footer::before { display: none; }
+.footer-container { max-width: 1180px; }
+.footer-brand-name, .footer-section-title, .footer-description, .contact-text, .copyright, .footer-bottom-link, .separator { color: var(--color-background); }
+.footer-brand-tagline, .footer-link { color: #FFE0A0; }
+.footer-link:hover, .footer-bottom-link:hover { color: var(--color-accent); }
+.social-link { border: 1px solid rgb(255 241 209 / .7); border-radius: 0; background: transparent; color: var(--color-background); }
+.social-link:hover { background: var(--color-accent); color: var(--color-text-primary); }
+.footer-bottom { border-color: rgb(255 241 209 / .35); }
+.footer-content > * { animation: none; }
+@media (max-width: 1024px) { .footer-brand { text-align: left; } }
+@media (max-width: 768px) { .footer-brand { text-align: center; } }
